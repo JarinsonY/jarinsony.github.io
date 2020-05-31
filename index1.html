@@ -1,1 +1,45 @@
-Hello World
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>AfroBin - Actividad #16</title>
+</head>
+
+<body>
+
+    <div class="container" id="main">
+        <h1>INICIO</h1>
+        <h5>Afrobin - Actividad #16</h5>
+        <br><br>
+        <form action="index2.html" method="get">
+            <div class="form-group">
+                <label for="">Nombre: </label>
+                <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Ingrese su usuario aquí..." required autocomplete="off">
+                <span class="txterror"></span>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="">Fecha de Nacimiento: </label>
+                <input type="date" id="fecha" class="form-control" required>
+                <span class="txterror"></span>
+            </div>
+            <br>
+            <span id="revisa" class="txterror"></span>
+            <br>
+            <input type="submit" value="Continuar" id="btnContinuar" class="btn btn-success">
+        </form>
+    </div>
+    <footer><p>Realizado por AfroBin</p></footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/codigo1.js"></script>
+</body>
+
+</html>
